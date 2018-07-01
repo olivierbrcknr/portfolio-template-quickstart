@@ -4,10 +4,10 @@
 Elements used:
 
 text-color: 		#17222d
-highlight colour:	#46f2b6
+highlight colour:	#e74c3c
+text-color-light:	#abb8c6
 
-font-fa
-mily: 'Roboto Mono', monospace; 
+font-family: 'Roboto Mono', monospace; 
 font-family: 'Open Sans', sans-serif;
 
 */
@@ -19,8 +19,8 @@ font-family: 'Open Sans', sans-serif;
 html, body {
 	font-family: 'Open Sans', sans-serif;
 
-	font-size: 18px;
-	line-height: 1.4;
+	font-size: 22px;
+	line-height: 1.7;
 
 	color: #17222d;
 }
@@ -28,44 +28,83 @@ html, body {
 
 
 a {
-	color: #46f2b6;
+	color: #e74c3c;
 	text-decoration: none;
-
+	border-bottom: solid 2px #e74c3c;
 	transition: opacity 0.3s;
 }
 a:hover {
-	opacity: 0.8;
+	border-color: transparent;
 }
 
+p + p {
+	margin-top: 0.6rem;
+}
 
-
-h2 {
-	font-size: 1.4rem;
+h1 {
+	font-size: 1.6rem;
 	font-weight: 600;
+	margin-bottom: 3rem;
+	margin-top: 1rem;
+}
+h2 {
+	font-size: 1.2rem;
+	line-height: 1.4;
+	font-weight: 600;
+	margin-bottom: 1rem;
+}
+h3 {
+	font-size: 0.8rem;
+	font-family: 'Roboto Mono', monospace; 
+	color: #e74c3c;
+	/*margin-top: 3rem;*/
+	margin-bottom: 0.2rem;
+}
+h5 {
+	opacity: 0.4;
 }
 
 
 img {
 	width: 100%;
 	height: auto;
-	margin-bottom: 1em;
+	margin-bottom: 1rem;
+	margin-top: 2rem;
 }
 
 
 
 /* Website Layout --------------------------------- */
 
-header {
-	font-size: 2rem;
+#wrapper .row {
+	max-width: 800px;
+}
+
+nav {
+	position: fixed;
+    transform: rotate(-90deg) ;
+	text-align: right;
+	z-index: 1000;
+
 	font-weight: 600;
-	margin: 6rem auto !important;
+	font-size: 1.2rem;
+}
+nav a {
+	color: #17222d;
+}
+nav a:hover {
+	color: #e74c3c;
 }
 
-.project {
-	margin-bottom: 3rem;
+
+header {
+	font-size: 1.6rem;
+	font-weight: 600;
+	padding: 4rem 0 !important;
 }
-
-
+header a {
+	border-width: 3px;
+}
 
 
 
@@ -73,8 +112,76 @@ footer {
 	font-family: 'Roboto Mono', monospace;
 	font-size: 12px;
 	color: #abb8c6;
-	border-top: solid 1px #abb8c6;
+	/*border-top: solid 1px #abb8c6;*/
 	padding: 1rem 0 5rem 0;
+}
+
+footer .d50 {
+	border-top: solid 1px #abb8c6;
+	padding-left: 0;
+	margin-left: 1rem;
+}
+footer .d50 +  .d50 {
+	padding-left: 1rem;
+	margin-left: 0;
+	padding-right: 0;
+	margin-right: 1rem;
+}
+
+
+
+/* Home Page --------------------------------- */
+
+
+.project {
+	color: #17222d;
+	border: none;
+}
+
+.project h2 {
+	margin-bottom: 0;
+}
+
+.project .desc {
+	margin-top: 1rem;
+}
+
+
+
+
+/* Project Page ---------------------------------- */
+
+.project-page {
+
+}
+
+.img_desc {
+	font-family: 'Roboto Mono', monospace; 
+	color: #abb8c6;
+	font-size: 0.6rem;
+}
+img + .img_desc {
+	margin-top: -1rem;
+	margin-bottom: 1rem;
+}
+
+.project-info {
+	font-size: 0.8rem;
+	line-height: 1.8;
+	color: #abb8c6;
+	margin-bottom: 2rem;
+}
+
+
+/* Vita Page ---------------------------------- */
+
+.vita_block {
+
+	margin-bottom: 2rem;
+}
+
+.vita_block li {
+	margin-bottom: 0.75rem;
 }
 
 
