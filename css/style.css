@@ -57,11 +57,12 @@ h3 {
 	font-size: 0.8rem;
 	font-family: 'Roboto Mono', monospace; 
 	color: #e74c3c;
-	/*margin-top: 3rem;*/
 	margin-bottom: 0.2rem;
 }
 h5 {
+	font-size: 0.8rem;
 	opacity: 0.4;
+	font-family: 'Roboto Mono', monospace; 
 }
 
 
@@ -166,6 +167,7 @@ img + .img_desc {
 }
 
 .project-info {
+	font-family: 'Roboto Mono', monospace; 
 	font-size: 0.8rem;
 	line-height: 1.8;
 	color: #abb8c6;

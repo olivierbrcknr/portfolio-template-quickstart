@@ -3,5 +3,18 @@
 
 @media only screen and (max-width: 719px) {
 
+	html, body {
+		font-size: 18px;
+	}
+
+
+	footer .d50 {
+		padding: 1rem 1rem 0 1rem;
+		margin: 0;
+		text-align: left !important;
+	}
+	footer .d50 +  .d50 {
+		border: none;
+	}
 
 }
